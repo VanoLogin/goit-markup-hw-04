@@ -157,6 +157,21 @@ img {
    color: var(--logo-color-button);
 }
 
+.address-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-svg-mail {
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.address-link:hover {
+    fill: #2196F3;
+}
+
+
 
 /* -------------Main---------------- */
 
@@ -164,6 +179,10 @@ img {
     background-color: #2F303A;
     text-align: center;
     padding: 200px 0;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-photo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1600px;
 }
 .hero-title {
     font-weight: 900;
@@ -304,8 +323,87 @@ img {
     letter-spacing: 0.03em;
     color: var(--color-p-text);
 
+    padding-bottom: 16px;
+}
+
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 30px;
 }
+.team-soc-items {
+    width: 44px;
+    height: 44px;
+}
+.team-soc-items:not(:last-child) {
+margin-right: 10px;
+}
+
+.team-soc-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center; 
+    color: #afb1b8;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-soc-link:hover {
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+.team-soc-icons {
+    fill: currentColor;
+}
+
+/* ------------------------BAse client------------ */
+
+.base-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    
+    padding-top: 94px;
+    margin-bottom: 50px;
+}
+.base-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 94px;
+}
+.base-client-link {
+    box-sizing: border-box;
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.base-client-icon{
+    width: 100%;
+    height: 100%;
+    fill: #afb1b8;
+}
+
+.base-client-link:hover {
+    box-shadow:  inset 0 0 0 1px #2196F3;
+    border: 1px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
 
 /* ------------------------ФУТер ------------ */
 .address-list, a {
@@ -352,10 +450,10 @@ img {
     margin-bottom: 20px;
 }
 
-
 .footer-block {
     background-color: #2F303A;
 }
+
 .footer-link-adress {
     font-weight: 400;
     font-size: 14px;
@@ -367,6 +465,70 @@ img {
 .footer-link-adress:focus {
     color: var(--logo-color-button);
 }
+
+.address-link-footer {
+    display: block;
+    padding: 32px 0;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--color-p-text);
+}
+.footer-container {
+    display: flex;
+}
+
+.footer-acction {
+    display: block;
+    margin-left: 70px;
+    margin-top: 12px;
+}
+
+.going-acction {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.acction-items {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+.acction-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #44454E;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.acction-link:hover {
+    background-color: var(--logo-color-button);
+}
+
+.acction-icon {
+    fill: #FFFFFF;
+}
+
+.acction-list {
+    height: 44px;
+    width: 44px;
+}
+.address-link-footer:hover {
+ color: var(--logo-color-button);
+}
+
+
+
 /* ----------------------------Portfolio-------------------------- */
 .portfolio {
     padding: 94px 0;
@@ -386,6 +548,15 @@ img {
     flex-wrap: wrap;
     gap: 30px;
 } 
+.top-item:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
+}
+
+.portfolio-items:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .portfolio-title {
     font-weight: 700;
     font-size: 18px;
