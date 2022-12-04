@@ -4,7 +4,7 @@
     --logo-color-button:  #2196F3;
     --color-p-text: #757575;
 }
-p, h1, h2, h3, h4, h5, h6 {
+p, h1, h2, h3, h4, h5, h6, a {
     margin: 0;
     padding: 0;
 }
@@ -251,6 +251,7 @@ img {
     height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;
+    background: #F5F4FA;
 }
 
 
@@ -323,7 +324,7 @@ img {
     letter-spacing: 0.03em;
     color: var(--color-p-text);
 
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .team-soc-list {
@@ -360,7 +361,10 @@ margin-right: 10px;
 }
 
 /* ------------------------BAse client------------ */
-
+.base-client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .base-title {
     font-weight: 700;
     font-size: 36px;
@@ -369,7 +373,6 @@ margin-right: 10px;
     letter-spacing: 0.03em;
     color: #212121;
     
-    padding-top: 94px;
     margin-bottom: 50px;
 }
 .base-list {
@@ -377,7 +380,6 @@ margin-right: 10px;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    padding-bottom: 94px;
 }
 .base-client-link {
     box-sizing: border-box;
@@ -392,15 +394,15 @@ margin-right: 10px;
     align-items: center;
 }
 .base-client-icon{
-    width: 100%;
-    height: 100%;
     fill: #afb1b8;
 }
+.base-client-link:hover .base-client-icon { 
+    fill: #2196f3;
+} 
 
 .base-client-link:hover {
-    box-shadow:  inset 0 0 0 1px #2196F3;
-    border: 1px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-color: #2196f3; 
+    
 }
 
 
@@ -493,12 +495,12 @@ margin-right: 10px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-bottom: 20px;
 }
 .acction-items {
     display: flex;
     justify-content: flex-start;
     gap: 10px;
-    margin-top: 20px;
 }
 
 
@@ -549,14 +551,15 @@ margin-right: 10px;
     gap: 30px;
 } 
 .top-item:hover {
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 
 }
 
-.portfolio-items:hover {
+.portfolio-link:hover {
+    cursor: pointer;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .portfolio-title {
     font-weight: 700;
     font-size: 18px;
@@ -583,9 +586,12 @@ margin-right: 10px;
     text-align: center;
     padding: 6px 22px;
     border: none;
+    
 }
 .button-portfolio:hover {
     color: var(--primary-header-color);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
     background-color: var(--logo-color-button);
 }
 
